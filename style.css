@@ -1,0 +1,537 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgb(39, 37, 37);
+}
+
+nav
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid black;
+    height: 80px;
+}
+
+.nav1 a
+{
+    display: flex;
+    column-gap: 15px;
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+.nav1:hover
+{
+    cursor: pointer;
+}
+
+.nav11
+{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.nav12
+{
+    padding-top: 18px;
+    font-size: 20px;
+}
+
+.nav2
+{
+    display: flex;
+    column-gap: 100px;
+    font-size: 20px;
+    color: white;
+}
+
+.nav21,.nav22
+{
+    position: relative;
+}
+
+.nav21:hover, .nav22:hover
+{
+    cursor: pointer;
+}
+
+.nav21 a, .nav22 a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.nav3
+{
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C1C1C1;
+}
+
+.nav3:hover
+{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.enter
+{
+    margin-top: 80px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 5px;
+    border-radius: 19px;
+    height: 90px;
+    display: flex;
+    position: relative;
+    background-color: #B994E9;
+}
+
+.enter-box
+{
+    width: 90%;
+}
+
+.enter-box input
+{
+    border-radius: 19px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.add button
+{
+    border: 3px solid black;
+    border-radius: 19px;
+    background-color: #4E4CC1;
+    color: white;
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add button:hover
+{
+    cursor: pointer;
+    background-color: #32317b;
+}
+
+.enter-box input
+{
+    font-size: 20px;
+    outline: none;
+    padding-left: 10px;
+}
+
+::placeholder
+{
+    color: black;
+}
+
+.todo-list
+{
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 5vh;
+    height: 600px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: #9D73B1;
+    overflow:auto;
+}
+
+.todo-list::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #725481;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.todo-list::-webkit-scrollbar-thumb{
+    background-color: #e0a4fc;
+    border-radius: 5px;
+}
+
+.todo-list::-webkit-scrollbar-thumb:hover
+{
+    background-color: #412e4a;
+}
+
+.option
+{
+    display: flex;
+    padding-left: 50%;
+    padding-top: 7vh;
+    padding-right: 20vw;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+
+.option1, .option2, .option3
+{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 110px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #393292;
+    color: white;
+}
+
+.option1:hover
+{
+    cursor: pointer;
+    background-color: #554bd3;
+}
+
+.option2:hover
+{
+    cursor: pointer;
+    background-color: #554bd3;
+}
+
+.option3:hover
+{
+    cursor: pointer;
+    background-color: #554bd3;
+}
+
+
+#task
+{
+    border: 3px solid black;
+}
+
+.tasks
+{
+    list-style: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.tasks li
+{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #CAA3E1;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.text
+{
+    overflow: auto;
+    margin-right: 5px;
+}
+
+.text::-webkit-scrollbar
+{
+    height: 5px;
+    border-radius: 5px;
+}
+
+.text::-webkit-scrollbar-thumb{
+    background-color: rgb(131, 87, 131);
+    border-radius: 5px;
+}
+
+.item-option
+{
+    display: flex;
+}
+
+.done, .delete-item
+{
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.done:hover, .delete-item:hover
+{
+    cursor: pointer;
+    background-color: gray;
+}
+
+.time
+{
+    position:absolute;
+    bottom: 2px;
+    left: 10px;
+    font-size: 14px;
+    color: rgb(77, 72, 202);
+}
+
+.time::before
+{
+    content:'Date: ';
+}
+
+@media (max-width : 1082px)
+{
+    .todo-list
+    {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+}
+
+@media (max-width : 720px) {
+    .nav11
+    {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    .nav12
+    {
+        padding-top: 17px;
+        font-size: 12px;
+    }
+    
+    .nav2
+    {
+        font-size: 30px;
+    }
+
+    .nav21 span
+    {
+        display: none;
+    }
+
+    .nav22 span
+    {
+        display: none;
+    }
+
+    .nav3
+    {
+        width: 40px;
+        height: 40px;
+        font-size: 35px;
+    }
+
+    .text
+    {
+        font-size: 17px;
+    }
+
+    .enter-box
+    {
+        width: 85%;
+    }
+
+    .add button
+    {
+        width: 14%;
+        font-size: 50px;
+    }
+
+    .option{
+        margin-top: 30px;
+        padding-top: 0px;
+        padding-left: 20%;
+    }
+
+    .option1, .option2, .option3
+    {
+        width: 200px;
+        font-size: 18px;
+    }
+
+    .todo-list
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .tasks
+    {
+        row-gap: 10px;
+    }
+}
+
+@media (max-width : 570px)
+{
+    .enter
+    {
+        margin-top: 60px;
+        height: 80px;
+        margin-bottom: 0px;
+    }
+
+    .add button
+    {
+        font-size: 100px;
+    }   
+
+    .nav11
+    {
+        font-size: 25px;
+    }
+    
+    .nav12
+    {
+        font-size: 8px;
+    }
+    
+    .nav2
+    {
+        column-gap: 70px;
+        font-size: 25px;
+    }
+
+    .nav3
+    {
+        width: 35px;
+        height: 35px;
+        font-size: 30px;
+    }
+
+    .add button
+    {
+        width: 14%;
+        font-size: 35px;
+    }
+
+    .option1, .option2, .option3
+    {
+        font-size: 13px;
+    }
+
+    .time
+    {
+        font-size: 10px;
+    }
+
+    .text
+    {
+        font-size: 16px;
+    }
+
+    .item-option button
+    {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    .tasks
+    {
+        padding: 15px 18px;
+    }
+}
+
+@media  (max-width : 450px) {
+    .option1, .option2, .option3
+    {
+        font-size: 10px;
+        width: 100px;
+    }
+
+    .todo-list
+    {
+        margin-top: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .enter
+    {
+        margin-top: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .option{
+        margin-top: 30px;
+    }
+
+    .tasks
+    {
+        padding: 10px;
+    }
+
+    .tasks li
+    {
+        padding: 20px 8px;
+    }
+
+    .nav2
+    {
+        column-gap: 25px;
+    }
+}
+
+@media (max-width : 370px) {
+    .nav11
+    {
+        font-size: 20px;
+    }
+    
+    .nav12
+    {
+        font-size: 6px;
+    }
+    
+    .nav2
+    {
+        font-size: 20px;
+    }
+
+    .nav3
+    {
+        width: 25px;
+        height: 25px;
+        font-size: 20px;
+    }
+
+    .enter
+    {
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+}
